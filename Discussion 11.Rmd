@@ -1,19 +1,38 @@
 ---
-title: "Discussion-11"
+title: "Discussion 11 Post - [Ticketmaster](www.ticketmaster.com)"
 author: "LeTicia Cancel"
 date: "11/5/2019"
 output: html_document
 ---
 
-# Discussion 11
 
-1. Perform a Scenario Design analysis as described below.  Consider whether it makes sense for your selected recommender system to perform scenario design twice, once for the organization (e.g. Amazon.com) and once for the organization's customers.
 
-The system I will analyze is Ticketmaster.com. It is a website where you can purchase tickets to various types of showsI will tak
-  1. Who are your target users?
-  2. What are their Key goals?
-  3. How can you help them to accomplish those goals?
-  
-2. Attempt to reverse engineer what you can about the site, from the site interface and any available information that you can find on the Internet or elsewhere.
-3. Include specific recommendations about how to improve the site's recommendation capabilities going forward. 
-4. Create your report using an R Markdown file, and create a discussion thread with a link to the GitHub repo where your Markdown file notebook resides.  You are not expected to need to write code for this discussion assignment.
+### **Scenario Design Analysis**
+
+The recommender system I will analyze is [Ticketmaster](www.ticketmaster.com). It is a website where you can purchase tickets to various types of shows such as musical concerts, comedy shows, sporting events, and others. Ticketmaster is accessible via the web through a web browser and also available through a mobile application. I will analyze the recommender system as someone who is browsing but has not signed in to the website and I will also analyze the recommender system when I log in to my Ticketmaster account.  
+
+**1. Who is Ticketmaster’s target audience?**
+
+Ticketmaster has a very broad target audience. While the similarity between each person visiting the website is that they would like to browse or purchase tickets to see a show, the variety of shows available is very broad. Ticketmaster also gives their audience the convenience of purchasing tickets online right when tickets go on sale. 
+
+**2. What are Ticketmaster’s key goals?**
+
+Ticketmaster’s key goal is to make searching and purchasing tickets for shows easy and accessible for all. If there is a show in another state, or town, or just in a location where visiting the box office in person is not easy to do, they can purchase tickets online through Ticketmaster.com and present their digital ticket with their mobile device. Their goal is also to make sure their target audience is aware of shows in their area with custom alerts notifying users when tickets to their favorite show or band will go on sale. 
+
+**3. How can I help them to accomplish those goals?**
+
+I would add an additional layer to the search or an additional option when searching. I believe the website is set up in a way where it assumes the user already knows what they are looking for but I would like to see a search geared towards the user who is exploring and does not have a specific show they are looking for. 
+
+### **Reverse Engineer**  
+
+When I first visit the website, without logging in, it seems like the site uses a Content-Based Recommender System because I automatically see shows based on my location. Although, I did notice that I was not asked for permission to use location services on my device. Besides shows based on my location, I can also see recommendations for shows based on popularity and based on the season so there are some Christmas shows available for purchase.
+
+If I enter my zip code in the search bar and just hit Search without entering the type of entertainment I would like to search, I get a list of all shows within a distance of 75 miles, sorted by date as the default. There is also a link at the top of the page that says “For You”. When I click on the link it brings me to a new page that lists all top events around the location I entered but the results are shown as cards instead of a list.
+
+When I log in to my Ticketmaster account the same page changes slightly. Most of the recommendation is the same but there is a new section called “Just For You, LeTicia” with cards to shows I am more likely to be interested in. I was not able to find any articles about Ticketmaster’s recommender system so I clicked around the site and thought about how my past browsing behavior influenced what I see now. It looks like a combination of user-user collaborative filtering and a content-based recommender system. The user-user collaborative filtering is what is showing popular shows around my area, and the content-based system is based on what I have saved to my profile as a favorite artist or venue. 
+
+### **Recommendations**
+
+My recommendation would be to add an interactive search option that begins by asking the user what kind of entertainment they are looking for and then asking drill-down questions based on mood, genre, location, and other attributes. 
+
+*Note: The only source used in this assignment was [Ticketmaster](www.ticketmaster.com). I was not able to find articles on the websites recommender systems so this assignment is based on my exploration of the website.*
